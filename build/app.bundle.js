@@ -9433,26 +9433,37 @@ module.exports = ReactPropTypesSecret;
 "use strict";
 
 
-var React = __webpack_require__(177);
-var ReactDOM = __webpack_require__(94);
+var _react = __webpack_require__(177);
 
-var App = React.createClass({
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(94);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _header = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"LogIn/Header/header\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));
+
+var _header2 = _interopRequireDefault(_header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var App = _react2.default.createClass({
     displayName: 'App',
 
     render: function render() {
-        return React.createElement(
+        return _react2.default.createElement(
             'div',
             null,
-            React.createElement(
+            _react2.default.createElement(
                 'p',
                 null,
-                'haivsdfsdf thanks'
+                'Hello'
             )
         );
     }
 });
 
-ReactDOM.render(React.createElement(App, null), document.getElementById("app"));
+_reactDom2.default.render(_react2.default.createElement('loginHeader', null), document.getElementById("app"));
 
 /***/ }),
 /* 80 */

@@ -1,0 +1,18 @@
+.tabs-wrap {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    background: white;
+}
+.tabs-wrap li {
+    float: left;
+    width: 49.5%;
+    text-align: center;
+    border: 1px solid rgba(228, 228, 228, 0.56);
+    cursor: pointer;
+}
+.tabs-wrap li h2 {
+    color: #2e3d49;
+    font-size: 17px;
+    padding: 20px 0px;
+}

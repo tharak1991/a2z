@@ -1,14 +1,16 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import loginHeader from 'LogIn/Header/header';
+
 
 var App = React.createClass({
     render: function () {
         return (
             <div>
-               <p>haivsdfsdf thanks</p>
+               <p>Hello</p>
             </div>
         );
     }
 });
 
-ReactDOM.render(<App/>,  document.getElementById("app"));
+ReactDOM.render(<loginHeader/>,  document.getElementById("app"));
