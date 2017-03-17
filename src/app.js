@@ -1,16 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import loginHeader from 'LogIn/Header/header';
+import LoginContainer from './App/LogIn/index';
 
 
-var App = React.createClass({
-    render: function () {
-        return (
-            <div>
-               <p>Hello</p>
-            </div>
-        );
-    }
-});
-
-ReactDOM.render(<loginHeader/>,  document.getElementById("app"));
+ReactDOM.render(<LoginContainer/>,  document.getElementById("app"));
