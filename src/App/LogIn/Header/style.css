@@ -1,18 +1,18 @@
 .tabs-wrap {
-    display: block;
-    height: auto;
-    overflow: hidden;
-    background: white;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e4e5e6;
 }
 .tabs-wrap li {
+    list-style: none;
+    width: 50%;
     float: left;
-    width: 49.5%;
     text-align: center;
-    border: 1px solid rgba(228, 228, 228, 0.56);
-    cursor: pointer;
 }
 .tabs-wrap li h2 {
-    color: #2e3d49;
-    font-size: 17px;
-    padding: 20px 0px;
+    margin: 0 0 0px 0px;
+    color: #737373;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
 }

@@ -10,15 +10,27 @@
          filename: 'app.bundle.js'
      },
      module: {
-         loaders: [{
-             test: /(\.jsx|\.js)$/,
-             exclude: /node_modules/,
-             loader:"babel-loader",
-              query: {
-                  presets: ['es2015', 'react']
-              }
-         }]
+         loaders:  [
+             {
+                test: /(\.jsx|\.js)$/,
+                exclude: /node_modules/,
+                loader:"babel-loader",
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            },
+            {
+                test: /\.css$/,
+                loader:'style!css!'
+            }
+        ]
      },
+     rules: [
+      {
+        test: /\.css$/,
+        loader:'style!css!'
+      }
+    ],
      stats: {
          colors: true
      },
