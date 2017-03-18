@@ -21,16 +21,17 @@
             },
             {
                 test: /\.css$/,
-                loader:'style!css!'
+                loader: 'style-loader!css-loader'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                    'url-loader?limit=10000',
+                    'img-loader'
+                ]
             }
         ]
      },
-     rules: [
-      {
-        test: /\.css$/,
-        loader:'style!css!'
-      }
-    ],
      stats: {
          colors: true
      },

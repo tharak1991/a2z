@@ -1,18 +1,18 @@
 import  React, {Component} from 'react';
-import  * as header from './style.css';
+import  './style.css';
+import  logo from './download.png';
 
-// let logo = require('./download');
 class LoginHeader extends React.Component {
     render(){
         return (
-            <div>
-               <div className={header.logo-wrap}>
-                    sdsdsdsdsdsdsdsd
-                </div>
-                <ul className={header.tabs-wrap}>
-                    <li><h2>SignUp</h2></li>
-                    <li className={header.active}><h2>SignIn</h2></li>
-                </ul>
+            <div className="clearfix">
+                 <div className="logo-wrap">
+                          <img src={logo} alt="logo"/>
+                 </div>
+                  <ul className="tabs-wrap clearfix">
+                      <li><h2>SignUp</h2></li>
+                      <li className="active"><h2>SignIn </h2></li>
+                  </ul>
             </div>
         )
     }
