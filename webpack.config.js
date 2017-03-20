@@ -15,6 +15,7 @@
                 test: /(\.jsx|\.js)$/,
                 exclude: /node_modules/,
                 loader:"babel-loader",
+                include: __dirname,
                 query: {
                     presets: ['es2015', 'react']
                 }
