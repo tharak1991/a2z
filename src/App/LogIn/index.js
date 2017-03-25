@@ -34,8 +34,8 @@ class LoginContainer extends React.Component{
                         <img src={logo} alt="logo"/>
                     </div>
                     <ul className="tabs-wrap clearfix">
-                        <li><h2 className= {this.state.toggleCheck ? 'active' : ''} onClick={this.state.showPanel}>SignUp</h2></li>
-                        <li><h2 className= {this.state.toggleCheck ? '' : 'active'} onClick={this.state.showPanel}>SignIn</h2></li>
+                        <li><h2 className= {this.state.toggleCheck ? '' : 'active'} onClick={this.state.showPanel}>SignUp</h2></li>
+                        <li><h2 className= {this.state.toggleCheck ? 'active' : ''} onClick={this.state.showPanel}>SignIn</h2></li>
                     </ul>
                 </div>
                 {panelWrap}
