@@ -1,24 +1,10 @@
 import React from 'react'
 
 class NavItems extends React.Component {
-    constructor(props){
-        super();
-        this.state= {
-            age: this.age
-        }
-    }
-    olderAge(){
-        this.state.age += 3;
-        console.log(this.age)
-    }
     render(){
-        console.log(this.props)
         return (
             <div>
                 <ul className="filter-option">
-                    
-                    {this.state.age}
-                    <button onClick={this.olderAge.bind(this)}>clickme</button>
                     <li>
                         <label >
                             <input type="checkbox" value="In Shelf" name="In Shelf"/>

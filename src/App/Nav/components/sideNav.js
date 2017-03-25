@@ -4,14 +4,10 @@ import NavItems from './navItems'
 
 class Nav extends React.Component {
     render() {
-       let user = {
-            name:'achus',
-            age: 27,
-            sports: ['asasas','asasasas']
-        }
+   
         return(
             <div className="side-nav">
-             <NavItems name={'achu'} user={user}/>
+             <NavItems />
             </div>
         )
     }
