@@ -20,3 +20,4 @@
 .sign-in{padding-top:30px;padding-bottom:30px}
 .hide{display:none}
 .show{display:block}
+.field-wrap input.border-red {border-bottom:1px solid red}

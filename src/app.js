@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import LoginContainer from './App/LogIn/index'
-import BookList from './App/BookList/components/bookList'
-import Nav from './App/Nav/components/sideNav'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import {browserHistory} from 'react-router-dom'
+import {LoginContainer} from './App/LogIn/index'
+import {BookList} from './App/BookList/components/bookList'
+import path from 'path'
+window.alert(Router)
 
 ReactDOM.render(
-     <LoginContainer/>, 
-     /*<div className="book-listing-wrap clearfix">
-        <Nav/>
-        <div className="right-wrap">
-            <BookList/>
-        </div>
-     </div>,*/
+      <Router >
+            <Route path="/"  component={LoginContainer}/>
+      </Router>,
      document.getElementById("app")
 );

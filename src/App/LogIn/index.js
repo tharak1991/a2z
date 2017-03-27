@@ -4,7 +4,7 @@ import  SignUp from './SignUp/SignUp';
 import  logo from './download.png';
 import  './style.css';
 
-class LoginContainer extends React.Component{
+export class LoginContainer extends React.Component{
 
     constructor() {
         super();
@@ -45,4 +45,4 @@ class LoginContainer extends React.Component{
 }
 
 
-export default LoginContainer
+

@@ -2,7 +2,7 @@ import React from 'react'
 import style from './style.css'
 import Book from './book.js'
 
-class BookList extends React.Component{
+export class BookList extends React.Component{
     render(){
         return(
 				<ul className="book-listing">
@@ -53,5 +53,5 @@ class BookList extends React.Component{
     }
 }
 
-export default BookList
+
 
