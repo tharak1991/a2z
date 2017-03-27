@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import axios from 'axios'
 
 class SignUp extends React.Component {
     constructor(props){
@@ -30,15 +31,29 @@ class SignUp extends React.Component {
     signupAction(e){
         e.preventDefault()
         if(this.state.username == '' || this.state.useremail == '' || this.state.userpassword == ''){
-           alert('error')
+            
             return false
         } else{
             this.setState({
                 isEmpty: this.state.isEmpty
             })
         }
-        this.userDetails.push({name: this.state.username}, {email:this.state.useremail}, {password:this.state.userpassword})
+        this.userDetails.push({
+                name: this.state.username,
+                email:this.state.useremail,
+                password:this.state.userpassword
+        })
+        axios.post(
+            '/api/user', 
+            this.userDetails
+            ).then(function(response){
+                console.log('dfdfdf')
+                console.log(response)
+        })
         console.log(this.userDetails)
+        this.state.username= ''
+        this.state.useremail = ''
+        this.state.userpassword=''
     }
 
 
@@ -46,7 +61,7 @@ class SignUp extends React.Component {
         return (
             <div className="panel-wrap sign-up">
                 <div className="form-wrap">
-                    <form onSubmit={this.signupAction}>
+                    <form onSubmit={this.signupAction} id="signupForm" ref="form">
                         <div className="field-wrap">
                             <input type="text" name="username" value={this.state.username} onChange={this.updateField} placeholder="Name" />
                             <i className="fa fa-user-o" aria-hidden="true"></i>
