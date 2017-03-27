@@ -4,28 +4,8 @@ import  SignUp from './SignUp/SignUp';
 import  logo from './download.png';
 import  './style.css';
 
-export class LoginContainer extends React.Component{
-    constructor() {
-        super();
-        this.state = {
-            toggleCheck: false,
-            showPanel: this.showPanel.bind(this)
-        }
-    }
-
-    showPanel(){
-        this.setState({
-            toggleCheck: !this.state.toggleCheck
-        })
-    }
-  
+class Login extends React.Component{
     render(){
-        let panelWrap = null;
-        if(this.state.toggleCheck) {
-            panelWrap = <SignIn/>;
-        } else{
-            panelWrap = <SignUp/>;
-        }
         return(
             <div className="login-wrap">
                 <div className="clearfix">
@@ -44,7 +24,4 @@ export class LoginContainer extends React.Component{
 }
 
 
-
-
-
-
+export default Login
