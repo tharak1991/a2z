@@ -1,13 +1,9 @@
-import  React, { Component } from 'react';
-import  SignIn from './SignIn/SignIn';
-import  SignUp from './SignUp/SignUp';
-import  logo from './download.png';
-import  './style.css';
+import React, {Component} from 'react'
+import logo from './download'
 
-class Login extends React.Component{
+class LoginComponent extends React.Component {
     render(){
-        return(
-            <div className="login-wrap">
+             <div className="login-wrap">
                 <div className="clearfix">
                     <div className="logo-wrap">
                         <img src={logo} alt="logo"/>
@@ -17,11 +13,6 @@ class Login extends React.Component{
                         <li><h2 className= {this.state.toggleCheck ? 'active' : ''} onClick={this.state.showPanel}>SignIn</h2></li>
                     </ul>
                 </div>
-                {panelWrap}
             </div>
-        )
     }
 }
-
-
-export default Login
