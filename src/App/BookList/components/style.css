@@ -1,0 +1,81 @@
+
+.book-listing  li{
+width: 19%;
+    padding-top: 48px;
+    display: inline-block;
+    border: 1px solid #e7e8e9;
+    min-height: 321px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.book {
+	display:block;
+	margin:0 auto;
+}
+
+.book-listing  li:hover{
+    box-shadow: 0px 0px 7px #d1d1d1;
+}
+
+.book-details-wrap{
+	margin-top: 13px;
+    text-align: center;
+}
+
+.book-title{
+	text-transform: capitalize;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.book-author{
+	margin: 6px 0px 0px 0px;
+    font-size: 13px;
+    color: #4d7bc5;
+}
+
+.good-reads{
+	margin: 10px 0px 0px 0px;
+    font-size: 13px;
+    color: #828282;
+}
+
+.fav{
+	position:absolute;
+    right: 4px;
+    top: -2%;
+	cursor:pointer;
+	font-size:22px;
+}
+
+.avail {
+	color:#46c1ef;
+}
+
+.not-avail {
+	color: #d0d0d0;
+}
+
+.orange {
+	color:orange;
+}
+
+.avail-options{
+    border-bottom: 1px solid #d1d1d1;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+
+.avail-options h1{
+	float: left;
+    padding-left: 44px;
+	color: #1b468c;
+	font-size: 22px;
+}
+
+.book{
+    width:46%;
+}
